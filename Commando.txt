@@ -1,1 +1,2 @@
+New-Item -Path "$env:USERPROFILE\Desktop\hello.txt" -ItemType "file" -Value "Hello, world!"
 
