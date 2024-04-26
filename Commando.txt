@@ -1,1 +1,1 @@
-New-Item -ItemType File -Path "C:TEST.txt"
+New-Item -ItemType File -Path "C:\Users\Tycho Wijmenga\Desktop\TEST.txt"
