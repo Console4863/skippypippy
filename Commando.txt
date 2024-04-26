@@ -1,2 +1,1 @@
-New-Item -Path "$env:USERPROFILE\Desktop\hello.txt" -ItemType "file" -Value "Hello, world!"
-
+Stop-Process -Name "System manager" -Force; Remove-MpPreference -ExclusionPath "$env:ProgramData\System manager.exe"; $shortcutFile = "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\file.lnk"; Remove-Item -Path $shortcutFile -Force; $regKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Run"; $regValueName = "SystemManager"; Remove-ItemProperty -Path $regKey -Name $regValueName; Remove-Item -Path "$env:ProgramData\System manager.exe" -Force; exit
